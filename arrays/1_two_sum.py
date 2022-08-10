@@ -4,5 +4,5 @@ class Solution:
         for i, val in enumerate(nums):
             complement = target - val
             if complement in nums_dict:
-                return [nums_dict[complement, i]]
+                return [nums_dict[complement], i]
             nums_dict[val] = i
